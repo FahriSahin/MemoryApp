@@ -1,0 +1,87 @@
+@import '~bootstrap/scss/bootstrap.scss';
+*{
+    box-sizing: border-box;
+}
+.my-nav{
+    text-align: center;
+    margin-top: 15px;
+    h5,h2{
+        color: #fff;
+        margin: 15px;
+    }
+}
+#root,html{
+    background-color: #83580b;
+}
+.my-card{
+    width: 215px;
+    height: 215px;
+}
+.bg-1{
+    background-image: url("./components/pics/pict1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+.bg-2{
+    background-image: url("./components/pics/pict2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+.bg-3{
+    background-image: url("./components/pics/pict3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+.bg-4{
+    background-image: url("./components/pics/pict4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+.bg-5{
+    background-image: url("./components/pics/pict5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+.bg-6{
+    background-image: url("./components/pics/pict6.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+.bg-color{
+    background-color: #d9b650;
+    border: 5px solid #ffc93c ;
+    border-radius: 7px;
+    margin: 5px !important;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: fit-content;
+
+}
+.alert{
+    display: none;
+}
+.item {
+    background-color: #f2f2f2;
+    margin: 5px;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .cards-grid{
+      display: none;
+    }
+    .alert{
+        display:block;
+        width: 75%;
+        margin: auto;
+    }
+  }
